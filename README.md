@@ -4,9 +4,12 @@ My Project is a website of collections that you can search and like
 
 ## Usage
 
-in the files the collection folder inside pages folder is split between admin and regular users
-my css is all from the sass folder i made
-in my components folder the admin folder is for the admin and the public folder is for regular users
+#
+
+## MongoDB
+
+here you put the name of your mongodb database
+MONGO*CON_STR="mongodb://localhost:27017/\_put here name of the database*"
 
 #
 
