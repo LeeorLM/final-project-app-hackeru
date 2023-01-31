@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+  list-style-type: none;
+
+  .list-group-item {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    background-color: $white;
+    border: $base-border-thickness solid rgba(0, 0, 0, 0.125);
+
+    .list-item-label {
+      padding: 5px;
+      border: 1px solid black;
+      border-radius: 15px;
+      background-color: black;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}

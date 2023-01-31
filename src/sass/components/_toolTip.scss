@@ -1,0 +1,50 @@
+.relative {
+  position: relative;
+}
+
+.tool-tip-postion {
+  position: absolute;
+  top: -15px;
+  right: 25px;
+}
+
+.tool-tip {
+  position: relative;
+  display: inline-block;
+
+  & .tool-tip-text {
+    visibility: hidden;
+    width: 300px;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 35px;
+  }
+  &:hover .tool-tip-text {
+    visibility: visible;
+  }
+
+  .tool-tip-text > p {
+    padding: 15px;
+  }
+
+  .tool-tip-icon {
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: gray;
+      color: black;
+    }
+  }
+}

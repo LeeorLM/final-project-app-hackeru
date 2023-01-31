@@ -1,0 +1,44 @@
+.topItems {
+  display: block;
+  max-width: 100vw;
+  margin-top: 25px;
+  .rowTitle {
+    background-color: #d9dde1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+
+    .titleName {
+      margin-left: 25px;
+    }
+
+    .titleBtn {
+      margin-right: 15px;
+    }
+  }
+  .listItems {
+    overflow-x: scroll;
+    display: flex;
+    width: 95%;
+    height: 268px;
+    margin: 0 auto;
+
+    .item {
+      height: 250px;
+      width: 150px;
+      margin-left: 5px;
+
+      .itemImg {
+        height: 210px;
+        width: 150px;
+        border: 1px solid black;
+      }
+
+      .itemName {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

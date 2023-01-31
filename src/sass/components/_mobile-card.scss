@@ -1,0 +1,15 @@
+.mobile-card {
+  border: 1px solid black;
+  position: relative;
+  width: 260px;
+
+  img {
+    width: 250px;
+    height: 300px;
+  }
+  .mobile-card-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+}
