@@ -1,0 +1,50 @@
+POST http://localhost:3002/api/users
+Content-Type: application/json
+
+{
+    "name": "Tomer", 
+    "email":"Tomerbu@gmail.com",
+    "password":"123456",
+    "biz": true
+}
+
+### test auth:
+
+POST http://localhost:3002/api/auth
+Content-Type: application/json
+
+{
+    "email":"Tomerbu@gmail.com",
+    "password":"123456"
+}
+
+### test /api/user/me with query
+
+GET http://localhost:3002/api/users/me?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjdiNzczZDY4NGFmYTQ3YmU0MzAwMTIiLCJpYXQiOjE2NTIyNjAwMzh9.1OuIvfS-9feoQXYizD9XzdyAtEQxMT2yV1La3sUEbio
+
+
+### test bizNumber:
+
+POST http://localhost:3002/api/cards?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjdiNzczZDY4NGFmYTQ3YmU0MzAwMTIiLCJpYXQiOjE2NTIyNjAwMzh9.1OuIvfS-9feoQXYizD9XzdyAtEQxMT2yV1La3sUEbio
+
+
+### test bizNumber Second Option
+
+POST http://localhost:3002/api/cards
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjdiNzczZDY4NGFmYTQ3YmU0MzAwMTIiLCJpYXQiOjE2NTIyNjAwMzh9.1OuIvfS-9feoQXYizD9XzdyAtEQxMT2yV1La3sUEbio
+
+
+### Post to /api/cards:
+
+POST http://localhost:3002/api/cards 
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjdiNzczZDY4NGFmYTQ3YmU0MzAwMTIiLCJpYXQiOjE2NTIyNjAwMzh9.1OuIvfS-9feoQXYizD9XzdyAtEQxMT2yV1La3sUEbio
+Content-Type: application/json
+
+{
+    "bizName": "Biz Name 1",
+    "bizDescription": "Biz Desc 1",
+    "bizAddress": "Biz Address , Israel",
+    "bizPhone": "03-6745277"
+
+
+}
