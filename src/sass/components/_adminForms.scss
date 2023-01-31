@@ -1,0 +1,26 @@
+.adminTitle {
+  font-size: 29px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px gray;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+.adminForm {
+  width: 80%;
+  // border: 1px solid black;
+  padding: 15px;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px gray;
+  background-color: lightgray;
+
+  .adminBtn {
+    width: 100%;
+  }
+}
